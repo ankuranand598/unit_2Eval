@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title>Proucts</title>
+    <head>
+        <style>
+            #div_main{
+                display: grid;
+                grid-template-columns:repeat(4,20%) ;
+                grid-gap: 5%;
+                margin-top: 10px;
+            }
+#div1{
+    height: 200px;
+    width: 500px;
+}
+img{
+    height: 80px;
+    width: 200px;
+}
+        </style>
+    </head>
+<body>
+    <input type="text" placeholder="enter name" id="name"/>
+    <input type="number" placeholder="enter the price" id="price"/>
+    <input type="text" placeholder="brand" id="brand"/>
+    <input type="text" placeholder="link to image" id="image"/>
+    <button onclick="addToShow()">Add product</button>
+    <button onclick="showCart()">Show cart</button>
+    <div id="div_main"></div>
+</body>
+</html>
+<script src="products.js"></script>
